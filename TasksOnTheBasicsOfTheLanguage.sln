@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0.1 DevelopClass", "DevelopClass\0.1 DevelopClass.csproj", "{537C432E-43D3-44A1-838D-AC4318AFFBD5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0.1 DevelopClass", "DevelopClass\0.1 DevelopClass.csproj", "{537C432E-43D3-44A1-838D-AC4318AFFBD5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{7C683081-67D1-4A51-A251-52EF8ACA16E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stack", "Testing\Stack.csproj", "{BCBF2FC8-1778-44C5-84D2-45ED7DB81D47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stack", "Testing\Stack.csproj", "{BCBF2FC8-1778-44C5-84D2-45ED7DB81D47}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateAPolygon", "CreateAPolygon\CreateAPolygon.csproj", "{A3D70F46-A3C9-454C-87E3-88823F2C4679}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0.2 CreateAPolygon", "CreateAPolygon\0.2 CreateAPolygon.csproj", "{A3D70F46-A3C9-454C-87E3-88823F2C4679}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
