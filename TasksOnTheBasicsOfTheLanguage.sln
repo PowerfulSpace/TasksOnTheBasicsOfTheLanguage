@@ -11,6 +11,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stack", "Testing\Stack.cspr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0.2 CreateAPolygon", "CreateAPolygon\0.2 CreateAPolygon.csproj", "{A3D70F46-A3C9-454C-87E3-88823F2C4679}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyTesting", "MyTesting\MyTesting.csproj", "{01CC852B-B187-4115-B5A4-791290301A9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0.3 WorldOfTanks", "WorldOfTanks\0.3 WorldOfTanks.csproj", "{F3BCF630-CC0E-44DD-94EF-539AC1320624}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,12 +33,21 @@ Global
 		{A3D70F46-A3C9-454C-87E3-88823F2C4679}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3D70F46-A3C9-454C-87E3-88823F2C4679}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3D70F46-A3C9-454C-87E3-88823F2C4679}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01CC852B-B187-4115-B5A4-791290301A9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01CC852B-B187-4115-B5A4-791290301A9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01CC852B-B187-4115-B5A4-791290301A9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01CC852B-B187-4115-B5A4-791290301A9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3BCF630-CC0E-44DD-94EF-539AC1320624}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3BCF630-CC0E-44DD-94EF-539AC1320624}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3BCF630-CC0E-44DD-94EF-539AC1320624}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3BCF630-CC0E-44DD-94EF-539AC1320624}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{BCBF2FC8-1778-44C5-84D2-45ED7DB81D47} = {7C683081-67D1-4A51-A251-52EF8ACA16E3}
+		{01CC852B-B187-4115-B5A4-791290301A9C} = {7C683081-67D1-4A51-A251-52EF8ACA16E3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C8A058B7-9F88-4E84-9E8D-D2CAA2E449D1}
