@@ -61,9 +61,9 @@ static Tank[] CreationOfTanks(string name,int count)
 
     for (int i = 0; i < tanks.Length; i++)
     {
-        amunnition = random.Next(10);
-        armorLevel = random.Next(10);
-        levelOfManeuverability = random.Next(10);
+        amunnition = random.Next(100);
+        armorLevel = random.Next(100);
+        levelOfManeuverability = random.Next(100);
 
         tanks[i] = new Tank(name, amunnition, armorLevel, levelOfManeuverability);
     }

@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0.2 CreateAPolygon", "Creat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyTesting", "MyTesting\MyTesting.csproj", "{01CC852B-B187-4115-B5A4-791290301A9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0.3 WorldOfTanks", "WorldOfTanks\0.3 WorldOfTanks.csproj", "{F3BCF630-CC0E-44DD-94EF-539AC1320624}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0.3 WorldOfTanks", "WorldOfTanks\0.3 WorldOfTanks.csproj", "{F3BCF630-CC0E-44DD-94EF-539AC1320624}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0.4 DifferenceOfTwoDates", "DifferenceOfTwoDates\0.4 DifferenceOfTwoDates.csproj", "{245C2162-B0E5-4A73-8255-0DA10E23DFF7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{F3BCF630-CC0E-44DD-94EF-539AC1320624}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3BCF630-CC0E-44DD-94EF-539AC1320624}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3BCF630-CC0E-44DD-94EF-539AC1320624}.Release|Any CPU.Build.0 = Release|Any CPU
+		{245C2162-B0E5-4A73-8255-0DA10E23DFF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{245C2162-B0E5-4A73-8255-0DA10E23DFF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{245C2162-B0E5-4A73-8255-0DA10E23DFF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{245C2162-B0E5-4A73-8255-0DA10E23DFF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
