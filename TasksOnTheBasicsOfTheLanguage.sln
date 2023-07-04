@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0.3 WorldOfTanks", "WorldOf
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0.4 DifferenceOfTwoDates", "DifferenceOfTwoDates\0.4 DifferenceOfTwoDates.csproj", "{245C2162-B0E5-4A73-8255-0DA10E23DFF7}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0.5 ProductIndexInformation", "ProductIndexInformation\0.5 ProductIndexInformation.csproj", "{5A6E5F68-F382-49DB-B7E9-8BE75FF3E823}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{245C2162-B0E5-4A73-8255-0DA10E23DFF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{245C2162-B0E5-4A73-8255-0DA10E23DFF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{245C2162-B0E5-4A73-8255-0DA10E23DFF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A6E5F68-F382-49DB-B7E9-8BE75FF3E823}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A6E5F68-F382-49DB-B7E9-8BE75FF3E823}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A6E5F68-F382-49DB-B7E9-8BE75FF3E823}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A6E5F68-F382-49DB-B7E9-8BE75FF3E823}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
