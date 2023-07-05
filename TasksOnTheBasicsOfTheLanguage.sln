@@ -23,6 +23,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Indexers", "Indexers\Indexe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0.6 StudentPerformance", "StudentPerformance\0.6 StudentPerformance.csproj", "{7773D6C6-AF38-495D-AC29-6271DF24E658}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentФAvailabilityStatus", "DocumentФAvailabilityStatus\DocumentФAvailabilityStatus.csproj", "{3CE3A946-DA34-4388-90F1-D82602E11624}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -65,6 +67,10 @@ Global
 		{7773D6C6-AF38-495D-AC29-6271DF24E658}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7773D6C6-AF38-495D-AC29-6271DF24E658}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7773D6C6-AF38-495D-AC29-6271DF24E658}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CE3A946-DA34-4388-90F1-D82602E11624}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CE3A946-DA34-4388-90F1-D82602E11624}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CE3A946-DA34-4388-90F1-D82602E11624}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CE3A946-DA34-4388-90F1-D82602E11624}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
