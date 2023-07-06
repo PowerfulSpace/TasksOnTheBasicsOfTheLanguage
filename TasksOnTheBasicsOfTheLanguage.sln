@@ -25,9 +25,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0.6 StudentPerformance", "S
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0.7 DocumentФAvailabilityStatus", "DocumentФAvailabilityStatus\0.7 DocumentФAvailabilityStatus.csproj", "{3CE3A946-DA34-4388-90F1-D82602E11624}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitCipherAndSimpleCipher", "BitCipherAndSimpleCipher\BitCipherAndSimpleCipher.csproj", "{44CDC0A7-F94D-4E5D-9209-AF3950FEB8FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BitCipherAndSimpleCipher", "BitCipherAndSimpleCipher\BitCipherAndSimpleCipher.csproj", "{44CDC0A7-F94D-4E5D-9209-AF3950FEB8FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0.8 AbstractHandler", "AbstractHandler\0.8 AbstractHandler.csproj", "{F714E30C-F6AF-480C-848A-593967C80A22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0.8 AbstractHandler", "AbstractHandler\0.8 AbstractHandler.csproj", "{F714E30C-F6AF-480C-848A-593967C80A22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayerPlaybackAndRecording", "PlayerPlaybackAndRecording\PlayerPlaybackAndRecording.csproj", "{6C23F3BB-65A2-4A79-B8A6-9A2293B15C55}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -83,6 +85,10 @@ Global
 		{F714E30C-F6AF-480C-848A-593967C80A22}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F714E30C-F6AF-480C-848A-593967C80A22}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F714E30C-F6AF-480C-848A-593967C80A22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C23F3BB-65A2-4A79-B8A6-9A2293B15C55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C23F3BB-65A2-4A79-B8A6-9A2293B15C55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C23F3BB-65A2-4A79-B8A6-9A2293B15C55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C23F3BB-65A2-4A79-B8A6-9A2293B15C55}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
