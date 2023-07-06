@@ -35,28 +35,6 @@ switch (statusPlayer)
 Console.ReadLine();
 
 
-static void PlayerStart(string statusPlayer, Player player)
-{
-    IPlayable play = player;
-    IRecodable record = player;
-
-    switch (statusPlayer)
-    {
-        case "play":
-            play.Play();
-            play.Pause();
-            play.Stop();
-            break;
-        default:
-            record.Record();
-            record.Pause();
-            record.Stop();
-            break;
-    }
-
-
-}
-
 interface IPlayable
 {
     void Play();

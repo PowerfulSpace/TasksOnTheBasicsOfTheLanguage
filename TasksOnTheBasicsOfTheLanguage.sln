@@ -29,7 +29,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BitCipherAndSimpleCipher", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0.8 AbstractHandler", "AbstractHandler\0.8 AbstractHandler.csproj", "{F714E30C-F6AF-480C-848A-593967C80A22}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayerPlaybackAndRecording", "PlayerPlaybackAndRecording\PlayerPlaybackAndRecording.csproj", "{6C23F3BB-65A2-4A79-B8A6-9A2293B15C55}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0.9 PlayerPlaybackAndRecording", "PlayerPlaybackAndRecording\0.9 PlayerPlaybackAndRecording.csproj", "{6C23F3BB-65A2-4A79-B8A6-9A2293B15C55}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
