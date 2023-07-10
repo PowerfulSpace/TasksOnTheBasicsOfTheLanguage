@@ -33,7 +33,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0.9 PlayerPlaybackAndRecord
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnumType", "EnumType\EnumType.csproj", "{F8195A17-3DA9-4F5E-8C6C-24E714929AE9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainData", "TrainData\TrainData.csproj", "{3D8D22DF-D728-4203-B5A2-FB6844DA4B6C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1.0 TrainData", "TrainData\1.0 TrainData.csproj", "{3D8D22DF-D728-4203-B5A2-FB6844DA4B6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Worker", "Worker\Worker.csproj", "{FE1D934D-1AAC-4352-ADA8-64298722FB7F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -101,6 +103,10 @@ Global
 		{3D8D22DF-D728-4203-B5A2-FB6844DA4B6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D8D22DF-D728-4203-B5A2-FB6844DA4B6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D8D22DF-D728-4203-B5A2-FB6844DA4B6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE1D934D-1AAC-4352-ADA8-64298722FB7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE1D934D-1AAC-4352-ADA8-64298722FB7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE1D934D-1AAC-4352-ADA8-64298722FB7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE1D934D-1AAC-4352-ADA8-64298722FB7F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
