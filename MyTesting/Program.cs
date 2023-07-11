@@ -1,41 +1,129 @@
-﻿byte a, b;
-byte result;
+﻿
 
-a = 127;
-b = 127;
 
-try
+IHomeCat vaska = new YardCat();
+vaska.Name = "Васька";
+CatInfoPrinter.PrintCatInfo(vaska);
+
+IHomeCat pushok = new PedigreeCat();
+pushok.Name = "Пушок";
+CatInfoPrinter.PrintCatInfo(pushok);
+
+IWildCat tiger = new Tiger();
+//CatInfoPrinter.PrintCatInfo(tiger);// ошибка
+
+
+IHomeCat testTiget = new Adapter(tiger);
+CatInfoPrinter.PrintCatInfo(testTiget);
+
+Console.ReadLine();
+
+
+class Adapter : IHomeCat
 {
-    unchecked
-    {
-        a = 127;
-        b = 127;
-        result = (byte)(a * b);
-        Console.WriteLine("Unchecked-результат: " + result);
+    public IWildCat WildCat { get; set; }
+    public string Name { get; set; }
 
-        a = 125;
-        b = 5;
-        result = (byte)(a * b);
-        Console.WriteLine("Unchecked-результат: " + result);
+
+    public Adapter(IWildCat wildCat)
+    {
+        WildCat = wildCat;
+        Name = WildCat.Breed;
     }
 
-    checked
+    public void Meow()
     {
-        a = 2;
-        b = 7;
-        result = (byte)(a * b); // Все в порядке.
-        Console.WriteLine("Checked-результат: " + result);
-        a = 127;
-        b = 127;
-        result = (byte)(a * b); // Здесь должно
-                                // быть сгенерировано исключение.
-        Console.WriteLine("Checked-результат: " +
-                          result); // Эта инструкция не выполнится.
+        WildCat.Growl();
     }
-}
-catch (OverflowException exc)
-{
-    Console.WriteLine(exc.Message);
+    public void Scratch()
+    {
+        WildCat.Scratch();
+    }
+
 }
 
-Console.ReadKey();
+
+
+
+interface IWildCat
+{
+    string Breed { get; } // порода дикой кошки
+    void Growl();  // рычание
+    void Scratch();
+}
+
+class Tiger : IWildCat
+{
+    public string Breed { get { return "Тигр обыкновенный"; } }
+
+    public void Growl()
+    {
+        Console.WriteLine("Grrrrrrr");
+    }
+
+    public void Scratch()
+    {
+        Console.WriteLine("У меня очень острые когти, царапаюсь до смерти");
+    }
+}
+
+
+
+
+
+
+
+
+
+interface IHomeCat
+{
+    string Name { get; set; }
+    void Meow();
+    void Scratch();// царапаться
+}
+
+
+class PedigreeCat : IHomeCat
+{
+    public string Name { get; set; }
+
+    public void Meow()
+    {
+        Console.WriteLine("Урррррр уррррр");
+    }
+
+    public void Scratch()
+    {
+        Console.WriteLine("Я не царапаюсь");
+    }
+}
+
+class YardCat : IHomeCat
+{
+    public string Name { get; set; }
+
+    public void Meow()
+    {
+        Console.WriteLine("Мяу мяу!");
+    }
+
+    public void Scratch()
+    {
+        Console.WriteLine("Я царапаюсь, но не сильно");
+    }
+}
+
+class CatInfoPrinter
+{
+    public static void PrintCatInfo(IHomeCat cat)
+    {
+        Console.WriteLine("Кошачье досье:");
+        Console.WriteLine(string.Format("Имя кота: {0}", cat.Name));
+        Console.Write("Вид мяуканья: ");
+        cat.Meow();
+        Console.Write("Вид царапанья: ");
+        cat.Scratch();
+
+        Console.WriteLine();
+    }
+}

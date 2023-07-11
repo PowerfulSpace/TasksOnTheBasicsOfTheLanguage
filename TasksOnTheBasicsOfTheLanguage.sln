@@ -35,7 +35,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnumType", "EnumType\EnumTy
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1.0 TrainData", "TrainData\1.0 TrainData.csproj", "{3D8D22DF-D728-4203-B5A2-FB6844DA4B6C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Worker", "Worker\Worker.csproj", "{FE1D934D-1AAC-4352-ADA8-64298722FB7F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1.1 Worker", "Worker\1.1 Worker.csproj", "{FE1D934D-1AAC-4352-ADA8-64298722FB7F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
