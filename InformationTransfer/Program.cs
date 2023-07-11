@@ -36,9 +36,9 @@
 //Емкость носителей информации должна быть указана в Гб, скорость копирования в Кб.
 
 
-Storage memoryFlash = new Flash();
-Storage memoryDVD = new DVD();
-Storage memoryHDD = new HDD();
+Storage memoryFlash = new Flash() { MediaName = "Flash", Model = "xiaomi", MemoryCapacity = 16, Speed = 5 };
+Storage memoryDVD = new DVD() { MediaName = "DVD", Model = "xiaomi", ReadingSpeed = 10, TypeDVD = "Оптический"};
+Storage memoryHDD = new HDD() { MediaName = "HDD", Model = "xiaomi", Speed = 8,NumberOfSections = 4,VolumeOfPartitions= 10 };
 
 Storage[] storages = new Storage[] { memoryFlash, memoryDVD, memoryHDD };
 
@@ -69,8 +69,8 @@ abstract class Storage
 }
 class Flash : Storage
 {
-    public string Speed { get; set; }
-    public string MemoryCapacity { get; set; }
+    public double Speed { get; set; }
+    public double MemoryCapacity { get; set; }
 
     public override void CoppingDataToTheDevice()
     {
@@ -94,7 +94,7 @@ class Flash : Storage
 }
 class DVD : Storage
 {
-    public string ReadingSpeed { get; set; }
+    public double ReadingSpeed { get; set; }
     public string TypeDVD { get; set; }
 
     public override void CoppingDataToTheDevice()
@@ -120,9 +120,9 @@ class DVD : Storage
 }
 class HDD : Storage
 {
-    public string Speed { get; set; }
-    public string NumberOfSections { get; set; }
-    public string VolumeOfPartitions { get; set; }
+    public double Speed { get; set; }
+    public int NumberOfSections { get; set; }
+    public int VolumeOfPartitions { get; set; }
 
     public override void CoppingDataToTheDevice()
     {
