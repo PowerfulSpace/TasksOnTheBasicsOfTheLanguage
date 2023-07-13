@@ -7,7 +7,7 @@
 
 
 
-double[] array = FillingArray(10);
+int[] array = FillingArray(10);
 
 Show(array);
 
@@ -23,15 +23,15 @@ Show(collectionOfOddNumbers2);
 Console.ReadLine();
 
 
-static IEnumerable<double> ReturnACollectionOfSquaredIntegers(double[] array)
+static IEnumerable<int> ReturnACollectionOfSquaredIntegers(int[] array)
 {
-    List<double> result = new List<double>();
+    List<int> result = new List<int>();
 
     for (int i = 0; i < array.Length; i++)
     {
         if (array[i] % 2 != 0)
         {
-            var elementInASquare = Math.Pow(array[i], 2);
+            var elementInASquare = (int)Math.Pow(array[i], 2);
             result.Add(elementInASquare);
         }
     }
@@ -39,24 +39,24 @@ static IEnumerable<double> ReturnACollectionOfSquaredIntegers(double[] array)
     return result;
 }
 
-static IEnumerable<double> ReturnACollectionOfSquaredIntegers2(double[] array)
+static IEnumerable<int> ReturnACollectionOfSquaredIntegers2(int[] array)
 {
-    List<double> result = new List<double>();
+    List<int> result = new List<int>();
 
     for (int i = 0; i < array.Length; i++)
     {
         if (array[i] % 2 != 0)
         {
-            var elementInASquare = Math.Pow(array[i], 2);
+            var elementInASquare = (int)Math.Pow(array[i], 2);
             yield return elementInASquare;
         }
     }
 }
 
 
-static double[] FillingArray(int size)
+static int[] FillingArray(int size)
 {
-    double[] array = new double[size];
+    int[] array = new int[size];
     Random random = new Random();
 
     for (int i = 0; i < array.Length; i++)
@@ -67,7 +67,7 @@ static double[] FillingArray(int size)
     return array;
 }
 
-static void Show(IEnumerable<double> array)
+static void Show(IEnumerable<int> array)
 {
     foreach (var item in array)
     {
