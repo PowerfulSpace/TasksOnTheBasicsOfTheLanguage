@@ -57,7 +57,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyStreamWriter", "MyStreamW
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChangeExtension", "ChangeExtension\ChangeExtension.csproj", "{5E9AF596-E307-4CD6-B8DB-9D668D4AC9E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkWithFileStream", "WorkWithFileStream\WorkWithFileStream.csproj", "{4C8575CC-7EE8-458B-9F6D-AB92A167B85C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.9 WorkWithFileStream", "WorkWithFileStream\1.9 WorkWithFileStream.csproj", "{4C8575CC-7EE8-458B-9F6D-AB92A167B85C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
