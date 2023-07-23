@@ -1,61 +1,23 @@
 ﻿
-MyDelegate myDelegate = null;
-MyDelegate myDelegate1 = new MyDelegate(Method1);
-MyDelegate myDelegate2 = new MyDelegate(Method2);
-MyDelegate myDelegate3 = new MyDelegate(Method3);
 
-myDelegate = myDelegate1 + myDelegate2 + myDelegate3;
 
-Console.WriteLine("Введите число от 1 до 7");
-string choice = Console.ReadLine();
 
-switch (choice)
-{
-    case "1":
-        {
-            myDelegate1.Invoke();
-            break;
-        }
-    case "2":
-        {
-            myDelegate2.Invoke();
-            break;
-        }
-    case "3":
-        {
-            myDelegate3.Invoke();
-            break;
-        }
-    case "4":
-        {
-            MyDelegate myDelegate4 = myDelegate - myDelegate1;
-            myDelegate4.Invoke();
-            break;
-        }
-    case "5":
-        {
-            MyDelegate myDelegate5 = myDelegate - myDelegate2;
-            myDelegate5.Invoke();
-            break;
-        }
-    case "6":
-        {
-            MyDelegate myDelegate6 = myDelegate - myDelegate3;
-            myDelegate6.Invoke();
-            break;
-        }
-    case "7":
-        {
-            myDelegate.Invoke();
-            break;
-        }
-    default:
-        {
-            Console.WriteLine("Вы ввели недопустимое значение.");
-            break;
-        }
-}
+CarDealer dealer = new CarDealer();
 
+Consumer Michael = new Consumer("Michael");
+Consumer Sebastian = new Consumer("Sebastian");
+
+
+dealer.NewCarInfo += Michael.NewCarIsHere;
+dealer.NewCar("Ferrari");
+Console.WriteLine();
+
+dealer.NewCarInfo += Sebastian.NewCarIsHere;
+dealer.NewCar("Mercedes");
+Console.WriteLine();
+
+dealer.NewCarInfo -= Michael.NewCarIsHere;
+dealer.NewCar("Red Bull Racing");
 
 Console.ReadKey();
 
@@ -63,23 +25,47 @@ Console.ReadKey();
 
 
 
-
-static void Method1()
+public class CarInfoEventArgs : EventArgs
 {
-    Console.WriteLine("Method1");
+    public string Car { get; private set; }
+    public CarInfoEventArgs(string car)
+    {
+        this.Car = car;
+    }
 }
 
-static void Method2()
+public class CarDealer
 {
-    Console.WriteLine("Method2");
+    public event EventHandler<CarInfoEventArgs> NewCarInfo;
+
+    public void NewCar(string car)
+    {
+        Console.WriteLine("Автосалон, новый автомобиль {0}", car);
+        RaiseNewCarInfo(car);
+    }
+
+    protected virtual void RaiseNewCarInfo(string car)
+    {
+        EventHandler<CarInfoEventArgs> newCarlnfo = NewCarInfo;
+        if (newCarlnfo != null)
+        {
+            newCarlnfo(this, new CarInfoEventArgs(car));
+        }
+    }
 }
 
-static void Method3()
+public class Consumer
 {
-    Console.WriteLine("Method3");
+    private string name;
+
+    public Consumer(string name)
+    {
+        this.name = name;
+    }
+
+    public void NewCarIsHere(object sender, CarInfoEventArgs e)
+    {
+        Console.WriteLine("{0} : Автомобиль {1} новый", name, e.Car);
+    }
 }
-
-
-
-public delegate void MyDelegate();
 
