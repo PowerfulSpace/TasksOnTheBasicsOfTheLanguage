@@ -73,7 +73,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventKeyboard", "EventKeybo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyEventHandler", "MyEventHandler\MyEventHandler.csproj", "{22C801E5-EC04-461F-B876-EDCFC4DD4367}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventNotofications", "EventNotofications\EventNotofications.csproj", "{5C795341-B801-4C54-B1A8-3B04E38E45ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventNotoficationsJournalSubscription", "EventNotofications\EventNotoficationsJournalSubscription.csproj", "{5C795341-B801-4C54-B1A8-3B04E38E45ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyObservableCollection", "MyObservableCollection\MyObservableCollection.csproj", "{6FFE1DC6-4A4D-4A9B-BD28-C4F2A8178637}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFileSystemWatcher", "MyFileSystemWatcher\MyFileSystemWatcher.csproj", "{F28A345E-3391-4502-AA75-1EB4ADE362D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnonymousMethod", "AnonymousMethod\AnonymousMethod.csproj", "{DF9F002A-3BD1-4D46-ACCD-905FF5F607E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -221,6 +227,18 @@ Global
 		{5C795341-B801-4C54-B1A8-3B04E38E45ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C795341-B801-4C54-B1A8-3B04E38E45ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C795341-B801-4C54-B1A8-3B04E38E45ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FFE1DC6-4A4D-4A9B-BD28-C4F2A8178637}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FFE1DC6-4A4D-4A9B-BD28-C4F2A8178637}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FFE1DC6-4A4D-4A9B-BD28-C4F2A8178637}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FFE1DC6-4A4D-4A9B-BD28-C4F2A8178637}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F28A345E-3391-4502-AA75-1EB4ADE362D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F28A345E-3391-4502-AA75-1EB4ADE362D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F28A345E-3391-4502-AA75-1EB4ADE362D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F28A345E-3391-4502-AA75-1EB4ADE362D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF9F002A-3BD1-4D46-ACCD-905FF5F607E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF9F002A-3BD1-4D46-ACCD-905FF5F607E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF9F002A-3BD1-4D46-ACCD-905FF5F607E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF9F002A-3BD1-4D46-ACCD-905FF5F607E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -242,6 +260,8 @@ Global
 		{A7C16B70-ABE5-4ED3-B9D4-0B1A54CF5F12} = {7C683081-67D1-4A51-A251-52EF8ACA16E3}
 		{22C801E5-EC04-461F-B876-EDCFC4DD4367} = {7C683081-67D1-4A51-A251-52EF8ACA16E3}
 		{5C795341-B801-4C54-B1A8-3B04E38E45ED} = {7C683081-67D1-4A51-A251-52EF8ACA16E3}
+		{6FFE1DC6-4A4D-4A9B-BD28-C4F2A8178637} = {7C683081-67D1-4A51-A251-52EF8ACA16E3}
+		{F28A345E-3391-4502-AA75-1EB4ADE362D2} = {7C683081-67D1-4A51-A251-52EF8ACA16E3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C8A058B7-9F88-4E84-9E8D-D2CAA2E449D1}
