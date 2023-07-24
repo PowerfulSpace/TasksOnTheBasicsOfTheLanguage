@@ -75,11 +75,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyEventHandler", "MyEventHa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventNotoficationsJournalSubscription", "EventNotofications\EventNotoficationsJournalSubscription.csproj", "{5C795341-B801-4C54-B1A8-3B04E38E45ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyObservableCollection", "MyObservableCollection\MyObservableCollection.csproj", "{6FFE1DC6-4A4D-4A9B-BD28-C4F2A8178637}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyObservableCollection", "MyObservableCollection\MyObservableCollection.csproj", "{6FFE1DC6-4A4D-4A9B-BD28-C4F2A8178637}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFileSystemWatcher", "MyFileSystemWatcher\MyFileSystemWatcher.csproj", "{F28A345E-3391-4502-AA75-1EB4ADE362D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFileSystemWatcher", "MyFileSystemWatcher\MyFileSystemWatcher.csproj", "{F28A345E-3391-4502-AA75-1EB4ADE362D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnonymousMethod", "AnonymousMethod\AnonymousMethod.csproj", "{DF9F002A-3BD1-4D46-ACCD-905FF5F607E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2.0 AnonymousMethod", "AnonymousMethod\2.0 AnonymousMethod.csproj", "{DF9F002A-3BD1-4D46-ACCD-905FF5F607E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeystrokeReportInFile", "KeystrokeReportInFile\KeystrokeReportInFile.csproj", "{DF9B9308-5A11-4DF1-AF60-2411B709C585}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -239,6 +241,10 @@ Global
 		{DF9F002A-3BD1-4D46-ACCD-905FF5F607E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF9F002A-3BD1-4D46-ACCD-905FF5F607E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF9F002A-3BD1-4D46-ACCD-905FF5F607E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF9B9308-5A11-4DF1-AF60-2411B709C585}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF9B9308-5A11-4DF1-AF60-2411B709C585}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF9B9308-5A11-4DF1-AF60-2411B709C585}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF9B9308-5A11-4DF1-AF60-2411B709C585}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
