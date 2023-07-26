@@ -103,15 +103,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LINQGroubByInto", "LINQGrou
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LINQAgregateOperations", "LINQAgregateOperations\LINQAgregateOperations.csproj", "{2536E27F-E586-4880-9FAD-277E183188B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQTakeSkip", "LINQTakeSkip\LINQTakeSkip.csproj", "{AAE328A2-D792-4547-9C2C-6D13B2609638}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LINQTakeSkip", "LINQTakeSkip\LINQTakeSkip.csproj", "{AAE328A2-D792-4547-9C2C-6D13B2609638}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQWorkingWithActionAndPredicate", "LINQWorkingWithActionAndPredicate\LINQWorkingWithActionAndPredicate.csproj", "{E9AA0363-A492-4F8B-B306-D858075DD826}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LINQWorkingWithActionAndPredicate", "LINQWorkingWithActionAndPredicate\LINQWorkingWithActionAndPredicate.csproj", "{E9AA0363-A492-4F8B-B306-D858075DD826}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQToLookup", "LINQToLookup\LINQToLookup.csproj", "{22A4A5D9-F147-4140-9BF6-62459D3A41CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LINQToLookup", "LINQToLookup\LINQToLookup.csproj", "{22A4A5D9-F147-4140-9BF6-62459D3A41CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.2 LINQBuyingACar", "LINQBuyingACar\2.2 LINQBuyingACar.csproj", "{9E4D0CA0-4EC8-4A23-BFAC-ED99CA15B2DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2.2 LINQBuyingACar", "LINQBuyingACar\2.2 LINQBuyingACar.csproj", "{9E4D0CA0-4EC8-4A23-BFAC-ED99CA15B2DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenerateLINQRequests", "GenerateLINQRequests\GenerateLINQRequests.csproj", "{910EAD14-F3BE-4ED2-B340-3EC07AE9F025}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2.3 GenerateLINQRequests", "GenerateLINQRequests\2.3 GenerateLINQRequests.csproj", "{910EAD14-F3BE-4ED2-B340-3EC07AE9F025}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Observable Collection", "Observable Collection\Observable Collection.csproj", "{E4DD2752-4BBE-4C21-BA7D-29B1F4CA8847}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -335,6 +337,10 @@ Global
 		{910EAD14-F3BE-4ED2-B340-3EC07AE9F025}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{910EAD14-F3BE-4ED2-B340-3EC07AE9F025}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{910EAD14-F3BE-4ED2-B340-3EC07AE9F025}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4DD2752-4BBE-4C21-BA7D-29B1F4CA8847}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4DD2752-4BBE-4C21-BA7D-29B1F4CA8847}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4DD2752-4BBE-4C21-BA7D-29B1F4CA8847}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4DD2752-4BBE-4C21-BA7D-29B1F4CA8847}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
