@@ -25,16 +25,15 @@ var teams1 = from team in teams
 
 var quary = from racer in racer1
             join team in teams1
-            on racer.Key equals team.Key into g
+            on racer.Key equals team.Key
             from rName in racer
-            from tName in g
-            from tN in tName
+            from tName in team
+            orderby rName.LastName
             select new
             {
                 Year = racer.Key,
                 RacerName = rName.LastName,
-                TeamName = tN.Name,
-                Group = g
+                TeamName = tName.Name
             };
 
 Console.WriteLine("{0,-20} {1,-20} {2}", "Год Чемпион", "Кубок", "конструкторов");
