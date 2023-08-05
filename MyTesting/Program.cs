@@ -2,23 +2,32 @@
 
 
 
-int[] numbers = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 
-var query = from x in numbers
-            group x by x % 2 into partition
-            select new { Key = partition.Key, Count = partition.Count(), Group = partition };
+string[] people = { "Tom", "Bob", "Sam", "Tim", "Tomas", "Bill" };
 
-
-foreach (var item in query)
+// создаем новый список для результатов
+var selectedPeople = new List<string>();
+// проходим по массиву
+foreach (string person in people)
 {
-    Console.WriteLine("mod2 == {0}", item.Key);
-    Console.WriteLine("Count == {0}", item.Count);
-    
-    foreach (var number in item.Group)
-        Console.Write("{0}, ", number);
-
-    Console.WriteLine();
-    Console.WriteLine();
+    // если строка начинается на букву T, добавляем в список
+    if (person.ToUpper().StartsWith("T"))
+        selectedPeople.Add(person);
 }
+// сортируем список
+selectedPeople.Sort();
 
-Console.ReadKey();
+foreach (string person in selectedPeople)
+    Console.WriteLine(person);
+
+
+
+
+
+
+
+
+
+
+
+
