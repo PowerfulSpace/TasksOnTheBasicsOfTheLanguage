@@ -22,7 +22,6 @@ var teams1 = from team in teams
              select g;
 
 
-
 var quary = from racer in racer1
             join team in teams1
             on racer.Key equals team.Key

@@ -115,7 +115,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2.3 GenerateLINQRequests", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2.4 Observable Collection", "Observable Collection\2.4 Observable Collection.csproj", "{E4DD2752-4BBE-4C21-BA7D-29B1F4CA8847}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQConstructorsCup", "LINQConstructorsCup\LINQConstructorsCup.csproj", "{35A3088E-0307-48C8-BF49-1A4808170106}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2.5 LINQConstructorsCup", "LINQConstructorsCup\2.5 LINQConstructorsCup.csproj", "{35A3088E-0307-48C8-BF49-1A4808170106}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
