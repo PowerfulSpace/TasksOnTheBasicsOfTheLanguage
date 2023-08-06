@@ -117,6 +117,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2.4 Observable Collection",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2.5 LINQConstructorsCup", "LINQConstructorsCup\2.5 LINQConstructorsCup.csproj", "{35A3088E-0307-48C8-BF49-1A4808170106}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReflectionsBasic", "ReflectionsBasic\ReflectionsBasic.csproj", "{2C492143-B90F-427E-B2AA-4AF99D156F11}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -347,6 +349,10 @@ Global
 		{35A3088E-0307-48C8-BF49-1A4808170106}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35A3088E-0307-48C8-BF49-1A4808170106}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35A3088E-0307-48C8-BF49-1A4808170106}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C492143-B90F-427E-B2AA-4AF99D156F11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C492143-B90F-427E-B2AA-4AF99D156F11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C492143-B90F-427E-B2AA-4AF99D156F11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C492143-B90F-427E-B2AA-4AF99D156F11}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -383,6 +389,7 @@ Global
 		{AAE328A2-D792-4547-9C2C-6D13B2609638} = {7C683081-67D1-4A51-A251-52EF8ACA16E3}
 		{E9AA0363-A492-4F8B-B306-D858075DD826} = {7C683081-67D1-4A51-A251-52EF8ACA16E3}
 		{22A4A5D9-F147-4140-9BF6-62459D3A41CF} = {7C683081-67D1-4A51-A251-52EF8ACA16E3}
+		{2C492143-B90F-427E-B2AA-4AF99D156F11} = {7C683081-67D1-4A51-A251-52EF8ACA16E3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C8A058B7-9F88-4E84-9E8D-D2CAA2E449D1}
