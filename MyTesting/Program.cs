@@ -1,171 +1,176 @@
 ﻿
+
 using System.Reflection;
 
+Console.SetWindowSize(80, 50);
 
+Assembly assembly = null;
 
-
-Console.SetWindowSize(80, 45);
-
-var myClass = new Class1(34);
-
-ListVariosStats(myClass);
-ListMethods(myClass);
-ListFields(myClass);
-ListProps(myClass);
-ListInterfaces(myClass);
-ListConstructors(myClass);
-
-Console.WriteLine(new string('-', 60));
-Type type = myClass.GetType();
-
-MethodInfo methodC = type.GetMethod("MethodC", BindingFlags.Instance | BindingFlags.NonPublic);
-methodC.Invoke(myClass, new object[] { "Hello", " world!" });
-
-FieldInfo mystring = type.GetField("mystring", BindingFlags.Instance | BindingFlags.NonPublic);
-mystring.SetValue(myClass, "Привет Мир!");
-
-Console.WriteLine(myClass.MyString);
-
-//Вызов метода из свойства 
-MethodInfo getPropMethod = type.GetMethod("get_myProp");
-Console.WriteLine(getPropMethod.Invoke(myClass, null));
-
-
-
-
-
-
-
-
-Console.ReadLine();
-
-
-static void ListVariosStats(Class1 cl)
+try
 {
-    Console.WriteLine(new string('_', 30) + " Информация о Class1" + "\n");
-    Type t = cl.GetType();
-
-    Console.WriteLine("Полное Имя:             {0}", t.FullName);
-    Console.WriteLine("Базовый класс:          {0}", t.BaseType);
-    Console.WriteLine("Абстрактный:            {0}", t.IsAbstract);
-    Console.WriteLine("Запрещено наследование: {0}", t.IsSealed);
-    Console.WriteLine("Это class:              {0}", t.IsClass);
+    assembly = Assembly.Load("CarLibrary");
+    Console.WriteLine("Сборка CarLibrary - успешно загружена.");
+}
+catch (FileNotFoundException ex)
+{
+    Console.WriteLine(ex.Message);
 }
 
-static void ListMethods(Class1 cl)
+ListAllTypes(assembly);
+ListAllMembers(assembly);
+GetParams(assembly);
+
+Console.ReadKey();
+
+
+static void ListAllTypes(Assembly assembly)
 {
-    Console.WriteLine(new string('_', 30) + " Методы класса Class1" + "\n");
+    Console.WriteLine(new string('_', 80));
+    Console.WriteLine("\nТипы в: {0} \n", assembly.FullName);
 
-    Type t = cl.GetType();
-    MethodInfo[] mi = t.GetMethods(BindingFlags.Instance
-            | BindingFlags.Static
-            | BindingFlags.Public
-            | BindingFlags.NonPublic | BindingFlags.DeclaredOnly);
+    Type[] types = assembly.GetTypes();
 
-    foreach (MethodInfo m in mi)
-        Console.WriteLine("Method: {0}", m.Name);
+    foreach (Type t in types)
+        Console.WriteLine("Тип: {0}", t);
 }
 
-static void ListFields(Class1 cl)
+static void ListAllMembers(Assembly assembly)
 {
-    Console.WriteLine(new string('_', 30) + " Поля класса Class1" + "\n");
+    Console.WriteLine(new string('_', 80));
 
-    Type t = cl.GetType();
-    FieldInfo[] fi =
-        t.GetFields(BindingFlags.Instance
-            | BindingFlags.Static
-            | BindingFlags.Public
-            | BindingFlags.NonPublic);
+    Type type = assembly.GetType("CarLibrary.MiniVan");
 
-    foreach (FieldInfo f in fi)
-        Console.WriteLine("Field: {0}", f.Name);
+    Console.WriteLine("\nЧлены класса: {0} \n", type);
+
+    MemberInfo[] members = type.GetMembers();
+
+    foreach (MemberInfo element in members)
+        Console.WriteLine("{0,-15}:  {1}", element.MemberType, element);
 }
 
-static void ListProps(Class1 cl)
+static void GetParams(Assembly assembly)
 {
-    Console.WriteLine(new string('_', 30) + " Свойства класса Class1" + "\n");
+    Console.WriteLine(new string('_', 80));
 
-    Type t = cl.GetType();
-    PropertyInfo[] pi = t.GetProperties();
+    Type type = assembly.GetType("CarLibrary.MiniVan");
+    MethodInfo method = type.GetMethod("Driver");
 
-    foreach (PropertyInfo p in pi)
-        Console.WriteLine("Свойство: {0}", p.Name);
-}
+    Console.WriteLine("\nИнформация о параметрах для метода {0}", method.Name);
+    ParameterInfo[] parameters = method.GetParameters();
+    Console.WriteLine("Метод имеет " + parameters.Length + " параметров");
 
-static void ListInterfaces(Class1 cl)
-{
-    Console.WriteLine(new string('_', 30) + " Интерфейсы класса Class1" + "\n");
-
-    Type t = cl.GetType();
-
-    Type[] it = t.GetInterfaces();
-
-    foreach (Type i in it)
-        Console.WriteLine("Интерфейс: {0}", i.Name);
-}
-
-static void ListConstructors(Class1 cl)
-{
-    Console.WriteLine(new string('_', 30) + " Конструкторы класса Class1" + "\n");
-    // Все ли конструкторы отобразились???
-    Type t = cl.GetType();
-    ConstructorInfo[] ci = t.GetConstructors();
-
-    foreach (ConstructorInfo m in ci)
-        Console.WriteLine("Constructor: {0}", m.Name);
-}
-
-
-
-
-public interface IInterface1
-{
-    void MethodA();
-}
-public interface IInterface2
-{
-    void MethodB();
-}
-
-public class Class1 : IInterface1, IInterface2
-{
-    public int myint;
-    private string mystring = "Hello";
-
-    static Class1() { }
-    public Class1() { }
-    public Class1(int i)
+    foreach (ParameterInfo parameter in parameters)
     {
-        this.myint = i;
+        Console.WriteLine("Имя параметра: {0}", parameter.Name);
+        Console.WriteLine("Позиция в методе: {0}", parameter.Position);
+        Console.WriteLine("Тип параметра: {0}", parameter.ParameterType);
     }
 
-    public int MyProp { get; set; }
-
-    public int myProp
-    {
-        get { return myint; }
-        set { myint = value; }
-    }
-
-    public string MyString
-    {
-        get { return mystring; }
-    }
-
-    public void MethodA() { }
-    public void MethodB() { }
-
-    private void MethodC(string str, string str2)
-    {
-        Console.WriteLine(str + str2);
-    }
-    public void myMethod(int p1, string p2) { }
 }
 
 
 
 
+public abstract class Car
+{
+    protected string name;
+    protected short currentSpeed;
+    protected short maxSpeed;
+    protected EngineState state;
 
 
+    protected Car()
+    {
+        state = EngineState.EngineAlive;
+    }
+
+    protected Car(string name, short maxSpeed, short currentSpeed)
+        : this()
+    {
+        this.name = name;
+        this.maxSpeed = maxSpeed;
+        this.currentSpeed = currentSpeed;
+    }
 
 
+    public abstract void Acceleration();
+
+    public void Driver(string name, int age)
+    {
+        Console.WriteLine("Имя водителя: {0}. Возраст: {1}", name, age);
+    }
+
+
+    public string Name
+    {
+        get { return name; }
+        set { name = value; }
+    }
+
+    public short CurrentSpeed
+    {
+        get { return currentSpeed; }
+        set { currentSpeed = value; }
+    }
+
+    public short MaxSpeed
+    {
+        get { return maxSpeed; }
+    }
+
+    public EngineState EngineState
+    {
+        get { return state; }
+    }
+}
+
+public enum EngineState
+{
+    EngineAlive,
+    EngineDead
+}
+
+public class MiniVan : Car
+{
+    public MiniVan()
+    {
+    }
+
+    public MiniVan(string name, short maxSpeed, short currentSpeed)
+        : base(name, maxSpeed, currentSpeed)
+    {
+    }
+
+    public override void Acceleration()
+    {
+        state = EngineState.EngineDead;
+        Console.WriteLine("MINIVAN:  Двигатель сгорел!");
+    }
+}
+
+
+public class SportsCar : Car
+{
+    public SportsCar()
+    {
+    }
+
+    public SportsCar(string name, short maxSpeed, short currentSpeed)
+        : base(name, maxSpeed, currentSpeed)
+    {
+    }
+
+    public override void Acceleration()
+    {
+        Console.WriteLine("SPORTCAR:  Быстрая скорость!");
+
+    }
+}
+
+internal class SecretCar : Car
+{
+    public override void Acceleration()
+    {
+        throw new NotImplementedException();
+    }
+}
